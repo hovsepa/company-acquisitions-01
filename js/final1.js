@@ -14,7 +14,7 @@ function acqdata() {
     "Other": "bar-pink"
   };
 
-  d3.csv("data/tenormore.csv", function(error, root) {
+  d3.csv("data/tenormore.csv", function (error, root) {
     if (error) throw error;
     var bigCompanyNames = [];
     var acquisitions = [];
@@ -56,7 +56,7 @@ function acqdata() {
 
     console.log(cleanData);
 
-    var sortedata = cleanData.sort(function(a, b) {
+    var sortedata = cleanData.sort(function (a, b) {
       return a.startDate - b.startDate;
     });
     console.log(sortedata);
